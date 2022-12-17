@@ -1,0 +1,1 @@
+The directory QuickTable_with_server is the application that combined with the django back-end codes. If you don't want to deploy the environment, you can just run the script quicktable.py in the directory QuickTable, which is a quickstart demo.
