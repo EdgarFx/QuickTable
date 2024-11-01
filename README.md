@@ -6,7 +6,7 @@ Most of the previous research only focused on one or two tasks of table recognit
 In summary, our main contributions:
 * Proposed a new pipeline to extract tables of interest in PDF files, which allows users to upload PDF files from mobile devices and enter keywords to get tables of interest.
 * Trained models in both Chinese and English so that users can upload files in different languages.
-* Develops an ultra lightweight application.
+* Developd an ultra lightweight application.
 
 ## Proposed Pipeline
 ![pipeline](images/pipeline.png)
