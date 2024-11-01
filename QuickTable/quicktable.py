@@ -44,12 +44,12 @@ gci(file)
 # 接下来就是对images里生成的图片先进行表格检测，这一步不需要区分中英文（用的都可以的模型）
 image_files = os.listdir('images')
 for fi in image_files:
-    os.system('python detection/deploy/infer.py --model_dir=detection/output_inference/picodet_lcnet_x1_0_fgd_layout_table_infer/ \
-    --image_file=images/%s --device=CPU --output_dir=detection/det_output/ --save_results'%fi)
+    os.system('python detection_quick/deploy/infer.py --model_dir=detection_quick/output_inference/picodet_lcnet_x1_0_fgd_layout_table_infer/ \
+    --image_file=images/%s --device=CPU --output_dir=detection_quick/det_output/ --save_results'%fi)
 
 
 # 然后，切割得到表格图像
-os.system('python detection/deploy/cut.py')
+os.system('python detection_quick/deploy/cut.py')
 
 
 # 接下来，即为表格结构识别和文本识别，并将得到excel文件，此时要判断中英文，由用户指定
